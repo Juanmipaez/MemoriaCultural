@@ -1,3 +1,4 @@
+
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
   const items = document.querySelectorAll('.timeline-item');
@@ -7,9 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   items.forEach(item => {
     const modalId = item.getAttribute('data-modal-target');
     const modal = document.getElementById(modalId);
-    item.addEventListener('click', () => {
-      modal.style.display = 'flex';
-    });
+    if (modal) {
+      item.addEventListener('click', () => {
+        modal.style.display = 'flex';
+      });
+    }
   });
 
   closeButtons.forEach(btn => {
@@ -18,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Cerrar modal al clicar fuera del contenido
   modals.forEach(modal => {
     modal.addEventListener('click', e => {
       if (e.target === modal) modal.style.display = 'none';

@@ -3,12 +3,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tras la cerca – Línea del tiempo del Holocausto</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Tras la cerca: Línea del tiempo del Holocausto</h1>
+  <header>
+    <h1>Tras la cerca: Línea del tiempo del Holocausto</h1>
+    <p class="intro">El Holocausto fue el genocidio sistemático de seis millones de judíos a manos del régimen nazi entre 1933 y 1945. Esta línea del tiempo interactiva muestra los eventos más significativos y nos invita a reflexionar sobre la memoria, la solidaridad y la defensa de los derechos humanos.</p>
+  </header>
+
   <div class="timeline-container">
     <div class="timeline-item" data-modal-target="modal1">
       <h2>30 Ene 1933</h2>
@@ -22,9 +27,17 @@
       <h2>9–10 Nov 1938</h2>
       <p>Kristallnacht</p>
     </div>
+    <div class="timeline-item" data-modal-target="modal6">
+      <h2>Oct 1940</h2>
+      <p>Gueto de Varsovia</p>
+    </div>
     <div class="timeline-item" data-modal-target="modal4">
       <h2>20 Ene 1942</h2>
       <p>Conferencia de Wannsee</p>
+    </div>
+    <div class="timeline-item" data-modal-target="modal7">
+      <h2>23 Jul 1942</h2>
+      <p>Treblinka inicia</p>
     </div>
     <div class="timeline-item" data-modal-target="modal5">
       <h2>27 Ene 1945</h2>
@@ -32,26 +45,24 @@
     </div>
   </div>
 
-  <!-- Modales -->
+  <!-- Modales enriquecidos -->
   <div class="modal" id="modal1">
     <div class="modal-content">
       <span class="close-button">&times;</span>
-      <h2>30 de enero de 1933: Adolf Hitler es nombrado Canciller de Alemania</h2>
+      <h2>30 de enero de 1933: Adolf Hitler es nombrado Canciller</h2>
       <img src="images/1933-hitler.jpg" alt="Hitler saluda tras ser nombrado Canciller" />
-      <p>El 30 de enero de 1933, Adolf Hitler fue nombrado Canciller de Alemania. En los meses siguientes, el Partido Nazi disolvió el parlamento, prohibió otros partidos políticos y estableció un estado totalitario basado en la supresión de libertades civiles y la propaganda antisemita.</p>
-      <p class="citation"><a href="https://www.ushmm.org/" target="_blank" rel="noopener">Fuente: United States Holocaust Memorial Museum</a></p>
-      <p class="reflection"><em>Reflexión: La pérdida de las instituciones democráticas facilitó el surgimiento de un régimen que excluyó a millones de personas por su origen, religión o ideas.</em></p>
+      <p>El 30 de enero de 1933, Adolf Hitler asumió la Cancillería de Alemania. En poco tiempo, el régimen nazi estableció un estado totalitario, eliminando libertades civiles y propagando un odio institucionalizado. Entre 1933 y 1945, se crearon numerosos campos de concentración donde millones de judíos y otros grupos perseguidos fueron encarcelados, torturados y asesinados.</p>
+      <p class="reflection"><em>Reflexión: Cuando un estado totalitario toma el control, nuestros derechos y libertades pueden desaparecer muy rápido. No hay que bajar la guardia ni dejar que el poder se concentre en unas pocas manos.</em></p>
     </div>
   </div>
 
   <div class="modal" id="modal2">
     <div class="modal-content">
       <span class="close-button">&times;</span>
-      <h2>15 de septiembre de 1935: Promulgación de las Leyes de Núremberg</h2>
+      <h2>15 de septiembre de 1935: Leyes de Núremberg</h2>
       <img src="images/1935-nuremberg.jpg" alt="Congreso nazi en Núremberg" />
-      <p>Las Leyes de Núremberg definieron legalmente quién era considerado “judío” y prohibieron el matrimonio o las relaciones sexuales entre judíos y “arios”. Con ello, el Estado sancionó la persecución sistemática y despojó a los judíos de la ciudadanía alemana.</p>
-      <p class="citation"><a href="https://www.ushmm.org/" target="_blank" rel="noopener">Fuente: United States Holocaust Memorial Museum</a></p>
-      <p class="reflection"><em>Reflexión: La legalización de la discriminación mostró cómo el odio puede institucionalizarse y convertirse en política de Estado.</em></p>
+      <p>Las Leyes de Núremberg definieron quién era legalmente judío y privaron a los judíos de la ciudadanía alemana. Estas normas prohibían los matrimonios interraciales y legitimaban la segregación, sentando las bases legales para la persecución masiva.</p>
+      <p class="reflection"><em>Reflexión: Si las leyes promueven el odio, dejan de protegernos a todos y pueden hacer mucho daño.</em></p>
     </div>
   </div>
 
@@ -60,9 +71,18 @@
       <span class="close-button">&times;</span>
       <h2>9–10 de noviembre de 1938: Kristallnacht</h2>
       <img src="images/1938-kristallnacht.jpg" alt="Cristales rotos tras el Kristallnacht" />
-      <p>En la Noche de los Cristales Rotos, se destruyeron sinagogas, negocios y hogares judíos en toda Alemania y Austria. Más de 30.000 judíos fueron arrestados y enviados a campos de concentración como Dachau.</p>
-      <p class="citation"><a href="https://www.ushmm.org/" target="_blank" rel="noopener">Fuente: United States Holocaust Memorial Museum</a></p>
-      <p class="reflection"><em>Reflexión: Este pogromo marcó el paso definitivo hacia la violencia de Estado, recordándonos el peligro de la tolerancia hacia el odio.</em></p>
+      <p>Durante la Noche de los Cristales Rotos, sinagogas, negocios y hogares judíos fueron atacados en toda Alemania y Austria. Más de 30.000 judíos fueron arrestados y muchos campos de concentración se llenaron con los primeros presos políticos y judíos.</p>
+      <p class="reflection"><em>Reflexión: El miedo y la indiferencia pueden normalizar la violencia; debemos alzar la voz antes de que sea demasiado tarde.</em></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal6">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Octubre de 1940: Creación del Gueto de Varsovia</h2>
+      <img src="images/1940-varsovia.jpg" alt="Fotografía aérea del Gueto de Varsovia" />
+      <p>En octubre de 1940, las autoridades alemanas establecieron el Gueto de Varsovia, aislando a más de 400.000 judíos en un área de 3,4 km² sin apenas suministros. Las condiciones eran inhumanas: hacinamiento, hambre y enfermedades.</p>
+      <p class="reflection"><em>Reflexión: La segregación extrema despoja a las personas de su dignidad; conocer estos hechos inspira nuestro compromiso con la justicia.</em></p>
     </div>
   </div>
 
@@ -71,9 +91,18 @@
       <span class="close-button">&times;</span>
       <h2>20 de enero de 1942: Conferencia de Wannsee</h2>
       <img src="images/1942-wannsee.jpg" alt="Ponentes en la Conferencia de Wannsee" />
-      <p>En esta reunión, altos funcionarios nazis planificaron la “Solución Final”: el asesinato sistemático de todos los judíos de Europa. Se coordinaron rutas, estaciones y métodos de exterminio en campos de la muerte.</p>
-      <p class="citation"><a href="https://www.ushmm.org/" target="_blank" rel="noopener">Fuente: United States Holocaust Memorial Museum</a></p>
-      <p class="reflection"><em>Reflexión: La burocracia y el lenguaje técnico sirvieron para ocultar la magnitud de la barbarie.</em></p>
+      <p>Altos funcionarios nazis se reunieron en Wannsee para coordinar la "Solución Final": el plan de exterminio de los judíos europeos. Se definieron métodos de transporte, zonas de reasentamiento y uso de cámaras de gas en campos como Auschwitz y Sobibor.</p>
+      <p class="reflection"><em>Reflexión: La burocracia puede enmascarar la barbarie; es nuestra responsabilidad desenmascarar el lenguaje que oculta el daño.</em></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal7">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>23 de julio de 1942: Inicio de las deportaciones a Treblinka</h2>
+      <img src="images/1942-treblinka.jpg" alt="Prisioneros en Treblinka" />
+      <p>A partir del 23 de julio de 1942, las deportaciones masivas desde el Gueto de Varsovia hacia el campo de exterminio de Treblinka comenzaron. En solo cuatro meses, se asesinó a cerca de 800.000 personas en cámaras de gas.</p>
+      <p class="reflection"><em>Reflexión: Estos actos atroces nos recuerdan la urgencia de mantener viva la memoria para que nunca se repitan.</em></p>
     </div>
   </div>
 
@@ -82,9 +111,8 @@
       <span class="close-button">&times;</span>
       <h2>27 de enero de 1945: Liberación de Auschwitz</h2>
       <img src="images/1945-auschwitz.jpg" alt="Soldados soviéticos liberan Auschwitz" />
-      <p>El Ejército Rojo llegó a Auschwitz y encontró a menos de 7.000 prisioneros vivos, en condiciones inhumanas. Descubrieron hornos crematorios, pilas de ropa y huesos, revelando al mundo la magnitud del genocidio.</p>
-      <p class="citation"><a href="https://www.ushmm.org/" target="_blank" rel="noopener">Fuente: United States Holocaust Memorial Museum</a></p>
-      <p class="reflection"><em>Reflexión: La memoria de quienes no sobrevivieron y el testimonio de los pocos que lo hicieron nos obligan a decir “¡Nunca más!”</em></p>
+      <p>El 27 de enero de 1945, el Ejército Rojo liberó Auschwitz, encontrando menos de 7.000 prisioneros vivos y evidencias claras de exterminio masivo: hornos crematorios, pilas de ropa y restos humanos. Este día se conmemora hoy como el Día Internacional de Conmemoración en Memoria de las Víctimas del Holocausto.</p>
+      <p class="reflection"><em>Reflexión: Recordar a las víctimas y escuchar a los supervivientes es nuestro deber para asegurar que Nunca Más ocurra algo similar.</em></p>
     </div>
   </div>
 
